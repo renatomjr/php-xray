@@ -34,7 +34,7 @@ trait HttpTrait
      * @param string $url
      * @return static
      */
-    public function setUrl(string $url)
+    public function setUrl($url)
     {
         $this->url = $url;
 
@@ -45,7 +45,7 @@ trait HttpTrait
      * @param string $method
      * @return static
      */
-    public function setMethod(string $method)
+    public function setMethod($method)
     {
         $this->method = $method;
 
@@ -56,7 +56,7 @@ trait HttpTrait
      * @param int $responseCode
      * @return static
      */
-    public function setResponseCode(int $responseCode)
+    public function setResponseCode($responseCode)
     {
         $this->responseCode = $responseCode;
 
@@ -66,7 +66,7 @@ trait HttpTrait
     /**
      * @return array
      */
-    protected function serialiseHttpData(): array
+    protected function serialiseHttpData()
     {
         return [
             'request' => array_filter([

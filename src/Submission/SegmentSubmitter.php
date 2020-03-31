@@ -11,5 +11,5 @@ use Pkerrigan\Xray\Segment;
  */
 interface SegmentSubmitter
 {
-    public function submitSegment(Segment $segment);
+    public function submitSegment($segment);
 }
